@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PembayaranActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_header"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_produk_lokal"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:scaleType="fitStart"
+            android:background="@drawable/bg_header"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="Carica"
+                android:layout_marginTop="90dp"
+                android:gravity="center"
+                android:padding="5dp"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/list_makanan1"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:background="#00ffffff"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lunpia_detail"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="20dp"
+                android:background="#00ffffff"/>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProdukActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_header"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_produk_lokal"
+            android:adjustViewBounds="true"
+            android:padding="10dp"
+            android:scaleType="fitStart"
+            android:background="@drawable/bg_header"/>
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:id="@+id/viewPager">
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makanan" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kerajinan" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pakaian" />
+        </com.google.android.material.tabs.TabLayout>
+    </androidx.viewpager.widget.ViewPager>
+
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/kota_semarang"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:paddingLeft="80dp"-->
+<!--                android:paddingRight="80dp"-->
+<!--                android:layout_marginTop="120dp"/>-->
+<!--            <ImageButton-->
+<!--                android:id="@+id/btn_lunpia"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/produk_list1"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="#00ffffff"/>-->
+<!--            <ImageButton-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/produk_list2"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:background="#00ffffff"/>-->
+<!--        </LinearLayout>-->
+
+<!--    </ScrollView>-->
+</RelativeLayout>
